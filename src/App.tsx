@@ -1,7 +1,16 @@
+import { Button } from "@/components/ui/button";
+
 function App() {
   return (
-    <div className="text-4xl font-bold grid place-content-center h-screen">
+    <div className=" font-bold grid place-content-center h-screen">
       Welcome to FurniSphere
+      <Button
+        variant="default"
+        size="sm"
+        onClick={() => console.log("clicked")}
+      >
+        Click Here
+      </Button>
     </div>
   );
 }
