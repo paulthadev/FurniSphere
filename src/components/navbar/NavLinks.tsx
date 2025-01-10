@@ -9,7 +9,7 @@ function NavLinks(): JSX.Element {
           to={link.href}
           key={link.label}
           className={({ isActive }) =>
-            `border- rounded-lg border px-2 py-1 capitalize tracking-wide ${isActive ? "text-primary" : "font-light"}`
+            `border- rounded-lg px-2 py-1 capitalize tracking-wide ${isActive ? "text-primary" : "font-light"}`
           }
         >
           {link.label}
