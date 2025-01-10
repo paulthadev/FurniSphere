@@ -14,7 +14,7 @@ function LinksDropdown(): JSX.Element {
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="lg:hidden">
         <Button variant="outline" size="icon">
-          <AlignLeft className="h-8 w-8" />
+          <AlignLeft className="h-8 w-8 text-primary" />
           <span className="sr-only">Toggle Links</span>
         </Button>
       </DropdownMenuTrigger>

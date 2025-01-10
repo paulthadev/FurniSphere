@@ -1,4 +1,4 @@
-import { Armchair } from "lucide-react";
+import { GalleryVerticalEnd } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function Logo() {
@@ -7,7 +7,7 @@ function Logo() {
       to="/"
       className="hidden items-center justify-center rounded-lg bg-primary p-2 text-white lg:flex"
     >
-      <Armchair className="h-8 w-8" />
+      <GalleryVerticalEnd className="h-8 w-8" />
     </Link>
   );
 }
