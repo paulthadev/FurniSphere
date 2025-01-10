@@ -5,8 +5,13 @@ function HomeLayout() {
   return (
     <>
       <Header />
+
       <nav>Nav</nav>
-      <Outlet />
+
+      <div className="align-element py-20">
+        <Outlet />
+      </div>
+
       <Footer />
     </>
   );
