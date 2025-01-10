@@ -1,19 +1,21 @@
-import { Header, Footer } from "@/components";
+import { Header, Footer, Navbar } from "@/components";
 import { Outlet } from "react-router-dom";
 
 function HomeLayout() {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       <Header />
+      <Navbar />
 
-      <nav>Nav</nav>
-
-      <div className="align-element py-20">
-        <Outlet />
+      {/* Main content area should grow to fill available space */}
+      <div className="flex-grow">
+        <div className="align-element py-20">
+          <Outlet />
+        </div>
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
 
