@@ -22,7 +22,7 @@ function LinksDropdown(): JSX.Element {
       <DropdownMenuContent
         align="start"
         className="w-52 lg:hidden"
-        sideOffset={25}
+        sideOffset={10}
       >
         {links.map((link) => (
           <DropdownMenuItem key={link.label}>
