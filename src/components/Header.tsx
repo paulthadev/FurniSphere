@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <header>
-      <div className="align-element items-center flex py-2 justify-center sm:justify-end">
+      <div className="align-element flex items-center justify-center py-2 sm:justify-end">
         {/* USER */}
         {user ? (
           <div className="flex items-center gap-x-2 sm:gap-x-8">
@@ -30,7 +30,7 @@ function Header() {
             </Button>
           </div>
         ) : (
-          <div className="flex gap-x-6 justify-center items-center -mr-4">
+          <div className="-mr-4 flex items-center justify-center gap-x-6">
             <Button asChild variant="link" size="sm">
               <Link to="/login">Sign in / Guest</Link>
             </Button>
