@@ -9,7 +9,7 @@ import { AlignLeft } from "lucide-react";
 import { Button } from "../ui/button";
 import { NavLink } from "react-router-dom";
 
-function LinksDropdown() {
+function LinksDropdown(): JSX.Element {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="lg:hidden">
@@ -29,7 +29,7 @@ function LinksDropdown() {
             <NavLink
               to={link.href}
               className={({ isActive }) => {
-                return `w-full capitalize ${isActive ? "text-primary" : ""} `;
+                return `w-full capitalize ${isActive ? "font-medium text-primary" : ""} `;
               }}
             >
               {link.label}
