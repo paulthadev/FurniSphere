@@ -13,22 +13,22 @@ import {
   Register,
   SingleProduct,
 } from "./pages";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Landing />,
+  },
+
+  {
+    path: "cart",
+    element: <Cart />,
+  },
+]);
 
 function App() {
-  const { name } = useAppSelector((state) => state.userState);
-  return (
-    <div className=" font-bold grid place-content-center h-screen">
-      Welcome to FurniSphere, {name}
-      <Button
-        variant="default"
-        size="sm"
-        onClick={() => console.log("clicked")}
-      >
-        Click Here
-      </Button>
-      <Cart />
-    </div>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
