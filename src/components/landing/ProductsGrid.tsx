@@ -14,9 +14,9 @@ function ProductsGrid() {
         const dollarAmount = formatAsDollars(price);
 
         return (
-          <Link to={`/products/${id}`}>
+          <Link to={`/products/${id}`} key={id}>
             <Card>
-              <CardContent>
+              <CardContent className="p-2">
                 <img
                   src={image}
                   alt={title}
