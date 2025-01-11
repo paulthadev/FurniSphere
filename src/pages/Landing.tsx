@@ -2,7 +2,7 @@
 import { type LoaderFunction } from "react-router-dom";
 import { authApi } from "@/api/axios";
 import { Hero, FeaturedProduct } from "@/components/landing";
-import { ProductsResponse } from "@/types";
+import { type ProductsResponse } from "@/types";
 
 export const loader: LoaderFunction = async (): Promise<ProductsResponse> => {
   const featuredProductUrl = "/products?featured=true";
