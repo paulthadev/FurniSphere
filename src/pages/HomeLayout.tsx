@@ -1,7 +1,9 @@
-import { Header, Footer, Navbar } from "@/components";
-import { Outlet } from "react-router-dom";
+import { Header, Footer, Navbar, Loading } from "@/components";
+import { Outlet, useNavigation } from "react-router-dom";
 
 function HomeLayout() {
+  const navigation = useNavigation();
+  const isPageLoading = navigation.state === "loading";
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -10,7 +12,7 @@ function HomeLayout() {
       {/* Main content area should grow to fill available space */}
       <div className="flex-grow">
         <div className="align-element py-20">
-          <Outlet />
+          {isPageLoading ? <Loading /> : <Outlet />}
         </div>
       </div>
 
