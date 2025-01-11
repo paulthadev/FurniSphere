@@ -14,7 +14,7 @@ function LinksDropdown(): JSX.Element {
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="lg:hidden">
         <Button variant="outline" size="icon">
-          <AlignLeft className="h-8 w-8 text-primary" />
+          <AlignLeft className="h-8 w-8 text-primary dark:text-white" />
           <span className="sr-only">Toggle Links</span>
         </Button>
       </DropdownMenuTrigger>
@@ -22,7 +22,7 @@ function LinksDropdown(): JSX.Element {
       <DropdownMenuContent
         align="start"
         className="w-52 lg:hidden"
-        sideOffset={25}
+        sideOffset={10}
       >
         {links.map((link) => (
           <DropdownMenuItem key={link.label}>

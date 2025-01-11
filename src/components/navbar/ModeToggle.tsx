@@ -21,12 +21,16 @@ function ModeToggle() {
         <Button variant="outline" size="icon" className="relative">
           <Sun
             className={`absolute h-[1.2rem] w-[1.2rem] text-primary transition-transform duration-300 ${
-              theme === "dark" ? "rotate-90 scale-0" : "rotate-0 scale-100"
+              theme === "dark"
+                ? "rotate-90 scale-0 text-white"
+                : "rotate-0 scale-100"
             }`}
           />
           <Moon
             className={`absolute h-[1.2rem] w-[1.2rem] text-primary transition-transform duration-300 ${
-              theme === "dark" ? "-rotate-90 scale-100" : "rotate-90 scale-0"
+              theme === "dark"
+                ? "-rotate-90 scale-100 text-white"
+                : "rotate-90 scale-0"
             }`}
           />
           <span className="sr-only">Toggle theme</span>
