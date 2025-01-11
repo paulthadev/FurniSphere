@@ -12,7 +12,7 @@ function HomeLayout() {
       {/* Main content area should grow to fill available space */}
       <div className="flex-grow">
         <div className="align-element py-20">
-          {isPageLoading ? <Loading /> : <Outlet />}
+          {!isPageLoading ? <Loading /> : <Outlet />}
         </div>
       </div>
 
