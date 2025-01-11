@@ -1,5 +1,12 @@
+import { ProductsGrid, SectionTitle } from ".";
+
 function FeaturedProduct() {
-  return <div>FeaturedProduct</div>;
+  return (
+    <section className="pt-24">
+      <SectionTitle text="featured products" />
+      <ProductsGrid />
+    </section>
+  );
 }
 
 export default FeaturedProduct;
