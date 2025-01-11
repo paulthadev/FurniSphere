@@ -46,7 +46,7 @@ function ProductsContainer() {
       {/* PRODUCT */}
       <div>
         {totalProducts === 0 ? (
-          <h2 className="my-24 text-center text-xl font-medium">
+          <h2 className="mt-16 text-center text-2xl font-medium">
             Sorry, no product matched your search..
           </h2>
         ) : layout === "grid" ? (
