@@ -9,7 +9,7 @@ function Filters() {
     <Form className="grid items-center gap-4 rounded-md border px-8 py-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <FormInput
         name="search"
-        label="Search Product"
+        label="search product"
         type="text"
         defaultValue={search}
       />
