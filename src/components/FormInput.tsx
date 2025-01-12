@@ -11,7 +11,7 @@ type FormInputProps = {
 function FormInput({ name, defaultValue, type, label }: FormInputProps) {
   return (
     <div className="mb-2">
-      <Label htmlFor={name}>{label}</Label>
+      <Label htmlFor={name}>{label || name}</Label>
       <Input type={type} name={name} id={name} defaultValue={defaultValue} />
     </div>
   );
