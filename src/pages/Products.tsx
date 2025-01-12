@@ -1,16 +1,16 @@
 /* eslint-disable react-refresh/only-export-components */
-import type { LoaderFunctionArgs } from "react-router-dom";
+import type { LoaderFunction } from "react-router-dom";
 import { authApi } from "@/api/axios";
+import { type ProductsResponse } from "@/types";
 import {
   Filters,
   PaginationContainer,
   ProductsContainer,
 } from "@/components/product";
-import { type ProductsResponse } from "@/types";
 
-export const loader = async ({
+export const loader: LoaderFunction = async ({
   request,
-}: LoaderFunctionArgs): Promise<ProductsResponse> => {
+}): Promise<ProductsResponse> => {
   const params = Object.fromEntries([
     ...new URL(request.url).searchParams.entries(),
   ]);
