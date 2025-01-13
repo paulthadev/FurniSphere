@@ -1,10 +1,15 @@
 import { Form, Link, useLoaderData } from "react-router-dom";
 import { Button } from "../ui/button";
-import { FormInput, FormRange, FormSelect } from "@/components/form";
+import {
+  FormCheckbox,
+  FormInput,
+  FormRange,
+  FormSelect,
+} from "@/components/form";
 
 function Filters() {
   const { meta, params } = useLoaderData();
-  const { search, category, company, order, price } = params;
+  const { search, category, company, order, price, shipping } = params;
   const { categories, companies } = meta;
 
   return (
@@ -42,6 +47,13 @@ function Filters() {
 
       {/* RANGE */}
       <FormRange label="price" name="price" defaultValue={price} />
+
+      {/* SHIPPING */}
+      <FormCheckbox
+        name="shipping"
+        label="free shipping"
+        defaultValue={shipping}
+      />
 
       {/* SEARCH BUTTON */}
       <Button type="submit" className="mb-2 self-end" size="sm">
