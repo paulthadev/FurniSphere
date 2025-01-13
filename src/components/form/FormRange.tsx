@@ -16,7 +16,7 @@ function FormRange({ label, name, defaultValue }: FormRangeProps) {
   const [selectedPrice, setSelectedPrice] = useState(defaultPrice);
 
   return (
-    <div className="mb-2">
+    <div className="mb-2 self-end">
       <Label className="flex justify-between capitalize" htmlFor={name}>
         {label || name}
         <span>{formatAsDollars(selectedPrice)}</span>
